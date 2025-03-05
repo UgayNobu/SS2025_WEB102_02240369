@@ -1,7 +1,7 @@
 ---
 Title: WEB 102 Practical 1
-categories: [WEB102 Peactical 1]
-tags: [WEB102]
+categories: WEB102 Peactical 1
+tags: WEB102
 ---
 
 ### Designing and Implementing RESTful API Endpoints
@@ -40,4 +40,4 @@ GET /posts/{id} - Get a specific post
 
 ![Page1](../Practical1_ApiDesign_Implementation/Images/Page1.jpeg)
 ![Page2](../Practical1_ApiDesign_Implementation/Images/Page2.jpeg)
-![Page3](../Practical1_ApiDesign_Implementation/Images/Page3.jpeg)
+![Page3](../Practical1_ApiDesign_Implementation/Images/page3.jpg)
