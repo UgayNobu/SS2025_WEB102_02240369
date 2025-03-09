@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API Documentation</h1>
+        <p>Welcome to the API documentation page.</p>
+
+        <h2>Base URL</h2>
+        <p><code>https://yourapi.com/api</code></p>
+
+        <h2>Endpoints</h2>
+        <h3>GET /users</h3>
+        <p>Retrieves a list of users.</p>
+        <pre><code>curl -X GET https://yourapi.com/api/users</code></pre>
+
+        <h3>POST /users</h3>
+        <p>Creates a new user.</p>
+        <pre><code>curl -X POST https://yourapi.com/api/users -d '{"name": "John Doe"}' -H "Content-Type: application/json"</code></pre>
+
+        <h3>GET /users/:id</h3>
+        <p>Retrieves a specific user by ID.</p>
+        <pre><code>curl -X GET https://yourapi.com/api/users/1</code></pre>
+
+        <h3>PUT /users/:id</h3>
+        <p>Updates a user's information.</p>
+        <pre><code>curl -X PUT https://yourapi.com/api/users/1 -d '{"name": "Jane Doe"}' -H "Content-Type: application/json"</code></pre>
+
+        <h3>DELETE /users/:id</h3>
+        <p>Deletes a user.</p>
+        <pre><code>curl -X DELETE https://yourapi.com/api/users/1</code></pre>
+    </div>
+</body>
+</html>
