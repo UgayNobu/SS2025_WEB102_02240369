@@ -13,20 +13,22 @@ This project is about designing and implementing RESTful API endpoints using Nod
    cd social-media-api
 Initialize Node.js
 
-bash
+```bash
 Copy
 Edit
 npm init -y
+```
 Install dependencies
 
-bash
+```bash
 Copy
 Edit
 npm install express morgan cors helmet
 npm install nodemon --save-dev
+```
 Project structure
 
-bash
+```bash
 Copy
 Edit
 controllers/
@@ -35,6 +37,7 @@ middleware/
 utils/
 server.js
 .env
+```
 🔧 API Endpoints
 🧑 Users
 GET /users - Get all users
@@ -75,12 +78,13 @@ utils/mockData.js
 📂 API Documentation
 Basic HTML docs page located at:
 
-arduino
+```arduino
 Copy
 Edit
 public/docs.html
+```
 🖥️ Run the Server
-bash
+```bash
 Copy
 Edit
 npm run dev
