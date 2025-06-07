@@ -1,43 +1,82 @@
+# Social Media API (Practical 1)
+
+## Objective
+This project is about designing and implementing RESTful API endpoints using Node.js and Express. The goal is to build a simple social media platform API with CRUD operations for posts, users, comments, likes, and followers.
+
 ---
-Title: WEB 102 Practical 1
-categories: WEB102 Peactical 1
-tags: WEB102
----
 
-### Designing and Implementing RESTful API Endpoints
----- 
+## 📁 Project Setup
 
-# Objectives
-1. Design RESTful API endpoints following best practices for URI design
-2. Implement API endpoints with proper HTTP methods and status codes
-3. Configure content negotiation with different MIME types
-4. Set up proper request and response handling
-5. Document your API endpoints
+1. **Create project folder**
+   ```bash
+   mkdir social-media-api
+   cd social-media-api
+Initialize Node.js
 
-## Part 1: API Design Exercise
+npm init -y
+Install dependencies
 
-# Scenario
-You are building a social media platform similar to Instagram with the following resources:
-● Posts
-● Users
-● Comments
-● Likes
-● Followers
+npm install express morgan cors helmet
+npm install nodemon --save-dev
+Project structure
 
-# Tasks
-1. For each resource, design endpoints for the following operations:
-○ List all items
-○ Get a specific item
-○ Create a new item
-○ Update an existing item
-○ Delete an item
+controllers/
+routes/
+middleware/
+utils/
+server.js
+.env
+🔧 API Endpoints
+🧑 Users
+GET /users - Get all users
 
-Example:
-GET /posts - List all posts
-GET /posts/{id} - Get a specific post
+GET /users/:id - Get a specific user
 
-2. Complete the following table for your design:
+POST /users - Create a user
 
-![Page1](../Practical1_ApiDesign_Implementation/Images/Page1.jpeg)
-![Page2](../Practical1_ApiDesign_Implementation/Images/Page2.jpeg)
-![Page3](../Practical1_ApiDesign_Implementation/Images/page3.jpg)
+PUT /users/:id - Update user
+
+DELETE /users/:id - Delete user
+
+📸 Posts
+GET /posts - Get all posts
+
+GET /posts/:id - Get a specific post
+
+POST /posts - Create a post
+
+PUT /posts/:id - Update post
+
+DELETE /posts/:id - Delete post
+
+(Same for comments, likes, followers)
+
+📄 Content Negotiation
+Middleware added in middleware/formatResponse.js to support response in:
+
+application/json
+
+text/html
+
+🧪 Mock Data
+Mock data for users and posts placed in:
+
+utils/mockData.js
+
+📂 API Documentation
+Basic HTML docs page located at:
+
+arduino
+public/docs.html
+🖥️ Run the Server
+bash
+npm run dev
+
+
+
+
+
+
+
+
+
